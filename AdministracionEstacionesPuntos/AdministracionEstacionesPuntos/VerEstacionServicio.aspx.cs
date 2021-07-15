@@ -9,22 +9,22 @@ using System.Web.UI.WebControls;
 
 namespace AdministracionEstacionesPuntos
 {
-    public partial class AdministrarPuntoCarga : System.Web.UI.Page
+    estacionesDAL estacionesDAL = new estacionesDAL();
+
+    private void CargarTabla(List<EstacionServicio> estaciones)
+    {
+        estacionesGrid.DataSource = estaciones;
+        estacionesGrid.DataBind();
+    }
+
+    public partial class VerEstacionServicio : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                List<PuntoCarga> puntos = new PuntosCargaDAL().GetAll();
-                tipoDdl.DataSource = puntos;
-                tipoDdl.DataTextField = "Tipo";
-                tipoDdl.DataBind();
+                CargarTabla(estacionesDAL.GetAll());
             }
-        }
-
-        protected void IngresarBtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

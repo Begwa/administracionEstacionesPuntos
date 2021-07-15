@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Administracion_DAL.DAL
 {
-    public class EstacionesDAL
+    public class estacionesDAL
     {
         private static List<EstacionServicio> estaciones = new List<EstacionServicio>()
         {

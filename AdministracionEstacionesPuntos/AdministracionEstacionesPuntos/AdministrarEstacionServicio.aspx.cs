@@ -13,5 +13,16 @@ namespace AdministracionEstacionesPuntos
         {
 
         }
+
+        protected void AgregarBtn_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+
+            } else
+            {
+
+            }
+        }
     }
 }

@@ -67,10 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdministrarEstacionServicio.aspx" />
+    <Content Include="AdministrarPuntoCarga.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="VerEstacionServicio.aspx" />
+    <Content Include="VerPuntosDeCarga.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministrarEstacionServicio.aspx.cs">
+      <DependentUpon>AdministrarEstacionServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministrarEstacionServicio.aspx.designer.cs">
+      <DependentUpon>AdministrarEstacionServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarPuntoCarga.aspx.cs">
+      <DependentUpon>AdministrarPuntoCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministrarPuntoCarga.aspx.designer.cs">
+      <DependentUpon>AdministrarPuntoCarga.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -86,6 +104,20 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="VerEstacionServicio.aspx.cs">
+      <DependentUpon>VerEstacionServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerEstacionServicio.aspx.designer.cs">
+      <DependentUpon>VerEstacionServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerPuntosDeCarga.aspx.cs">
+      <DependentUpon>VerPuntosDeCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerPuntosDeCarga.aspx.designer.cs">
+      <DependentUpon>VerPuntosDeCarga.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -97,6 +129,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Administracion_DAL\Administracion_DAL.csproj">
+      <Project>{58899eaf-a888-4c36-a7a3-ed61e4dcfac9}</Project>
+      <Name>Administracion_DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

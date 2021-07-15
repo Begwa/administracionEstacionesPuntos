@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="Default.aspx" title="Inicio"  description="">
-    <siteMapNode url="AdministrarEstacionServicio.aspx" title="Adminsitrar Estacion De Servicio"  description="" />
-    <siteMapNode url="AdministrarPuntoCarga.aspx" title="Administrar Punto De Carga"  description="" />
+    <siteMapNode url="AdministrarEstacionServicio.aspx" title="Agregar Estacion De Servicio"  description="" />
+    <siteMapNode url="AdministrarPuntoCarga.aspx" title="Agregar Punto De Carga"  description="" />
+    <siteMapNode url="VerPuntosCarga.aspx" title="Ver Puntos De Carga"  description="" />
+    <siteMapNode url="VerEstacionServicio.aspx" title="Ver Estaciones De Servicio"  description="" />
+    <siteMapNode url="EliminarPuntoCarga.aspx" title="Eliminar Punto De Carga"  description="" />
+    <siteMapNode url="EliminarEstacionServicio.aspx" title="Eliminar Estacion De Servicio"  description="" />
   </siteMapNode>
 </siteMap>
